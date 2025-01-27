@@ -6,7 +6,7 @@ mod discovery;
 mod notification;
 mod request;
 
-pub enum UMPStreamMessage {
+pub enum StreamMessage {
     DiscoveryMessages(DiscoveryMessage),
     NotificationMessages(NotificationMessage),
     StreamConfigurationRequest(StreamConfigurationRequest),

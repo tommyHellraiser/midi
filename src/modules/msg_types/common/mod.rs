@@ -1,0 +1,16 @@
+pub(super) type MidiChannelType = u8;
+pub(super) type MidiNoteNumberType = u8;
+pub(super) type MidiVelocityType = u8;
+pub(super) type MidiDataType = u8;
+pub(super) type MidiIndexType = u8;
+pub(super) type MidiProgramType = u8;
+pub(super) type MidiSourceNote = u8;
+pub(super) type MidiNumberOfChannels = u8;
+pub(super) type MidiBankType = u8;
+pub(super) type MidiLongDataType = u32;
+pub(super) type MidiSemitonesType = u8;
+pub(super) type MidiCentsType = u8;
+pub(super) type MidiCoarseTuningType = u8;
+pub(super) type MidiTuningProgramNumberType = u8;
+pub(super) type MidiTuningBankNumberType = u8;
+pub(super) type MidiAttributeType = u8;

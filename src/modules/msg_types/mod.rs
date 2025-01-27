@@ -1,18 +1,24 @@
-use crate::modules::msg_types::stream::UMPStreamMessage;
+use crate::modules::msg_types::midi_1_voice::Midi1VoiceMessage;
+use crate::modules::msg_types::midi_2_voice::Midi2VoiceMessage;
+use crate::modules::msg_types::stream::StreamMessage;
+use crate::modules::msg_types::utility::UtilityMessage;
 
 pub mod stream;
 pub mod common;
+mod utility;
+mod midi_1_voice;
+mod midi_2_voice;
 
 #[derive(Default)]
 pub enum MessageType {
-    Utility,
+    Utility(UtilityMessage),
     System,
-    MIDI1VoiceChannel,
+    MIDI1VoiceChannel(Midi1VoiceMessage),
     DataWithSystemExclusive,
-    MIDI2VoiceChannel,
+    MIDI2VoiceChannel(Midi2VoiceMessage),
     Data,
     FlexData,
-    UMPStream(UMPStreamMessage),
+    UMPStream(StreamMessage),
     #[default]
     Unset,
 }
